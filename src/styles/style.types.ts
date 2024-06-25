@@ -2,8 +2,8 @@ import "styled-components";
 
 export enum TypographySize {
   body = "10px",
-  HL = "12px",
-  HM = "14px",
+  HM = "12px",
+  HL = "14px",
 }
 
 export interface AppTypographyProps {

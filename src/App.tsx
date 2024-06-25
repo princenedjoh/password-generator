@@ -4,7 +4,7 @@ import theme from './styles/theme';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App h-full">
       <ThemeProvider theme = {theme}>
         <Main />
       </ThemeProvider>

@@ -5,11 +5,22 @@
 body {
   margin: 0;
   font-family: "JetBrains Mono", monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #08070B;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --darkGray : #24232C;
+  --gray : #817D92;
+  --almostWhite : #E6E5EA;
+  --veryDarkGray : #18171F;
+  --neonGreen : #A4FFAF;
+  --red : #F64A4A;
+  --orange : #FB7C58;
+  --yellow : #F8CD65;
+  --bg : "#08070B"
 }

@@ -1,24 +1,38 @@
+import { useState } from "react"
 import { AppTypography, Flex } from "../../styles/global"
-import { Container } from "./container.style"
+import { TypographySize } from "../../styles/style.types"
+import theme from "../../styles/theme"
+import CustomSlider from "./UI/slider"
 
 const CharacterLength = () => {
+    const [passwordLength, setPasswordLength] = useState(8)
+
     return (
-        <Container>
+        <Flex
+            direction="column"
+            gap={0.1}
+        >
             <Flex
-                direction="column"
+                justify="space-between"
+                align="center"
             >
-                <Flex
-                    justify="space-between"
+                <AppTypography>
+                    Character Length
+                </AppTypography>
+                <AppTypography
+                    size={TypographySize.HL}
+                    textColor={theme.colors.neonGreen}
                 >
-                    <AppTypography>
-                        Character Length
-                    </AppTypography>
-                    <AppTypography>
-                        10
-                    </AppTypography>
-                </Flex>
+                    {passwordLength}
+                </AppTypography>
             </Flex>
-        </Container>
+            <CustomSlider 
+                value={passwordLength}
+                setValue={setPasswordLength}
+                min={8}
+                max={100}
+            />
+        </Flex>
     )
 }
 export default CharacterLength

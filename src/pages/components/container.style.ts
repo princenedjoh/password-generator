@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div.attrs({
-   className : ` Container mt-[100px] `
+   className : ` Container `
 })<{
     width? : string,
     bg? : string,

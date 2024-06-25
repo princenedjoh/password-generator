@@ -1,0 +1,20 @@
+.css-7o8aqz-MuiSlider-rail {
+    background-color: var(--veryDarkGray);
+}
+
+.css-cp2j25-MuiSlider-thumb {
+    background-color: var(--almostWhite);
+}
+
+.css-cp2j25-MuiSlider-thumb:hover {
+    background-color: var(--veryDarkGray);
+    border: 1px solid var(--neonGreen);
+}
+
+.css-ttgsjq-MuiSlider-track {
+    background-color: var(--neonGreen);
+}
+
+.css-188mx6n-MuiSlider-root {
+    color : transparent
+}
