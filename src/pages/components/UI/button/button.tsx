@@ -17,7 +17,7 @@ const Button = ({
             <AppTypography
                 textColor={mouseOver ? theme.colors.neonGreen : theme.colors.veryDarkGray}
             >
-                Generate ➜
+                Generat ➜
             </AppTypography>
         </div>
     )
