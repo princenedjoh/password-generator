@@ -24,6 +24,7 @@ const Checks = () => {
     return (
         <Flex
             direction="column"
+            padding="0 0 0 5px"
             gap={18}
         >
             {
