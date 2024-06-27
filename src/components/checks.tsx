@@ -4,6 +4,7 @@ import Flex from "@/styles/components/flex"
 import Text from "@/styles/components/text"
 import { TypographyBold } from "@/styles/style.types"
 import { useState } from "react"
+import Checkbox from "./UI/checkbox/checkbox"
 
 const Checks = () => {
     const [checkData, setCheckData] = useState([
@@ -24,6 +25,16 @@ const Checks = () => {
             checked : false
         },
     ])
+
+    const handleChecked = (index : number) => {
+        setCheckData(
+            prev => prev.map((item, i) => 
+                i === index 
+                ? {...item, checked : !item.checked} 
+                : item)
+        )
+    }
+
     return (
         <Flex
             direction="column"
@@ -32,22 +43,20 @@ const Checks = () => {
         >
             {
                 checkData.map((item, index : number) => (
-                    <Flex
+                    <div 
+                        className='flex gap-[10px] items-center w-full cursor-pointer'
                         key={index}
-                        align='center'
-                        gap={10}
+                        onClick={()=>handleChecked(index)}
                     >
-                        <input 
-                            type="checkbox" 
+                        <Checkbox 
                             checked={item.checked}
-                            className="bg-transparent rounded-full"
                         />
                         <Text
                             bold={TypographyBold.md}
                         >
                             {item.title}
                         </Text>
-                    </Flex>
+                    </div>
                 ))
             }
         </Flex>

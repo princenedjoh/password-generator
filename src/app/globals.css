@@ -7,3 +7,24 @@ body {
   font-family: "JetBrains Mono", monospace;
   background-color: #08070B;
 }
+
+:root {
+  --darkGray : #24232C;
+  --gray : #817D92;
+  --almostWhite : #E6E5EA;
+  --veryDarkGray : #18171F;
+  --neonGreen : #A4FFAF;
+  --red : #F64A4A;
+  --orange : #FB7C58;
+  --yellow : #F8CD65;
+  --bg : "#08070B"
+}
+
+:where(.css-dev-only-do-not-override-m4timi).ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner{
+  background-color: var(--neonGreen);
+  border-radius: 0;
+}
+
+.customCheck {
+  border: none;
+}

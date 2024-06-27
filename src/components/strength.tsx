@@ -30,7 +30,7 @@ const Strength = () => {
                         {
                             [1,2,3,4].map((item, index : number) => (
                                 <div 
-                                    className="h-[20px] w-[8px] border-[1px] border-white border-solid"
+                                    className="h-[20px] w-[8px] border-[1px] border-theme-almostWhite border-solid"
                                     key={index}    
                                 >
 

@@ -620,6 +620,12 @@ video {
 .h-fit {
   height: fit-content;
 }
+.h-\[17px\] {
+  height: 17px;
+}
+.h-\[15px\] {
+  height: 15px;
+}
 .\!w-full {
   width: 100% !important;
 }
@@ -631,6 +637,18 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-\[50px\] {
+  width: 50px;
+}
+.w-\[20px\] {
+  width: 20px;
+}
+.w-\[17px\] {
+  width: 17px;
+}
+.w-\[15px\] {
+  width: 15px;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -653,14 +671,14 @@ video {
 .gap-3 {
   gap: 0.75rem;
 }
+.gap-\[10px\] {
+  gap: 10px;
+}
 .overflow-hidden {
   overflow: hidden;
 }
 .rounded {
   border-radius: 0.25rem;
-}
-.rounded-full {
-  border-radius: 9999px;
 }
 .border {
   border-width: 1px;
@@ -671,13 +689,13 @@ video {
 .border-solid {
   border-style: solid;
 }
+.border-theme-almostWhite {
+  --tw-border-opacity: 1;
+  border-color: rgb(230 229 234 / var(--tw-border-opacity));
+}
 .border-theme-neonGreen {
   --tw-border-opacity: 1;
   border-color: rgb(164 255 175 / var(--tw-border-opacity));
-}
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 .bg-theme-bg {
   --tw-bg-opacity: 1;
@@ -750,6 +768,27 @@ body {
   margin: 0;
   font-family: "JetBrains Mono", monospace;
   background-color: #08070B;
+}
+
+:root {
+  --darkGray : #24232C;
+  --gray : #817D92;
+  --almostWhite : #E6E5EA;
+  --veryDarkGray : #18171F;
+  --neonGreen : #A4FFAF;
+  --red : #F64A4A;
+  --orange : #FB7C58;
+  --yellow : #F8CD65;
+  --bg : "#08070B"
+}
+
+:where(.css-dev-only-do-not-override-m4timi).ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner{
+  background-color: var(--neonGreen);
+  border-radius: 0;
+}
+
+.customCheck {
+  border: none;
 }
 
 @media (min-width: 768px) {
